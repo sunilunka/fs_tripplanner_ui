@@ -1,3 +1,87 @@
-h1 {
-  color: red;
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 2000;
+  .logo {
+    height: 50px;
+    padding: 5px;
+    width: 200px;
+    background-color: red;
+    display: inline-block;
+
+    h3 {
+      font-family: helvetica;
+      margin: 5px;
+    }
+  }
+  .nav-link {
+    color: white;
+    display: inline-block;
+    // margin: 0px 20px 0px 20px;
+    cursor: pointer;
+    height: 100%;
+    padding: 0px 10px 0px 10px;
+    background-color: inherit;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+  }
+
+  .nav-link:hover{
+    background-color: #D1D1D1;
+  }
+
+}
+
+label {
+  color: white;
+  display: block;
+  margin: 10px;
+}
+
+select {
+  width: 75%;
+}
+
+.listBtn {
+  position: absolute;
+  right: 0px;
+}
+
+.container {
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  height: 100%;
+  background-color: green;
+  width: 33%;
+
+  .touristStuff {
+    padding: 10px;
+    background-color: blue;
+    height: 45%;
+  }
+
+  .myTrip {
+    padding: 10px;
+    background-color: purple;
+    height: 45%;
+    .day {
+      background-color: gold;
+      h3 {
+        margin-top: 5px;
+      }
+    }
+    .daySelector {
+      background-color: yellow;
+      padding: 10px;
+    }
+    .todo {
+      .listBtn {
+        right: 30px;
+      }
+    }
+  }
 }

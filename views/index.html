@@ -2,13 +2,75 @@
 {% extends "layout.html" %}
 
 {% block content %}
+  <section class="container">
+    <section class="touristStuff">
+      <header>
+        <h3></h3>
+      </header>
+      <label for="hotels">
+        Hotels
+      </label>
+      <select>
+        {% for hotel in all_hotels  %}
+          <option name="hotels" value="{{ hotel.name }}">{{ hotel.name }}</option>
+        {%endfor%}
+      </select>
+      <button name="hotels" class="btn">
+        X
+      </button>
+      <label for="restaurants">
+        Restaurants
+      </label>
+      <select>
+        {% for restaurant in all_restaurants  %}
+          <option name="restaurants" value="{{ restaurant.name }}">{{ restaurant.name }}</option>
+        {%endfor%}
+      </select>
+      <button name="restaurants" class="btn">
+        X
+      </button>
 
-  <h1>Testing</h1>
+      <label for="activities">
+        Things to do
+      </label>
+      <select>
+        {% for activity in all_activities  %}
+          <option name="activities" value="{{ activity.name }}">{{ activity.name }}</option>
+        {%endfor%}
+      </select>
+      <button name="activities" class="btn">
+        X
+      </button>
+
+    </section>
+    <section class="myTrip">
+      <header class="day">
+        <h3>DAY X</h3>
+      </header>
+      <div class="daySelector">
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">+</button>
+      </div>
+      <div class="todo">
+        <h4>My Hotel</h4>
+        <ul>
+          <li>My Hotel<button class="btn listBtn">X</button></li>
+        </ul>
+        <h4>My Restaurants</h4>
+        <ul>
+          <li>My Restaurants<button class="btn listBtn">X</button></li>
+        </ul>
+        <h4>My Activities</h4>
+        <ul>
+          <li>My Activities<button class="btn listBtn">X</button></li>
+        </ul>
+      </div>
+
+    </section>
+  </section>
   <label>Hotels</label>
-  <select>
-    {% for hotel in all_hotels  %}
-      <option value="{{ hotel.name }}">{{ hotel.name }}</option>
-    {%endfor%}
-  </select>
+
 
   {% endblock %}
