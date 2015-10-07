@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Trip Planner UI</title>
-  </head>
-  <body>
-    <h1>Testing</h1>
-    <label>Hotels</label>
-    <select>
-      {% for hotel in all_hotels  %}
-        <option value="{{ hotel.name }}">{{ hotel.name }}</option>
-      {%endfor%}
-    </select>
-  </body>
 
-</html>
+{% extends "layout.html" %}
+
+{% block content %}
+
+  <h1>Testing</h1>
+  <label>Hotels</label>
+  <select>
+    {% for hotel in all_hotels  %}
+      <option value="{{ hotel.name }}">{{ hotel.name }}</option>
+    {%endfor%}
+  </select>
+
+  {% endblock %}
