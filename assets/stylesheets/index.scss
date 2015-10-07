@@ -5,6 +5,7 @@ nav {
   height: 50px;
   background-color: rgba(0,0,0,0.75);
   z-index: 2000;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.95);
   .logo {
     height: 50px;
     padding: 5px;
@@ -45,9 +46,33 @@ select {
   width: 75%;
 }
 
+.btn-remove {
+  background-color: red;
+  font-size: 20px;
+  color: white;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+}
+
+.btn-remove:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.btn-remove:active {
+  background-color: orange;
+  color: yellow;
+}
+
 .listBtn {
   position: absolute;
   right: 0px;
+  height: 40px;
+  width: 40px;
+}
+
+.btn-circle {
+  border-radius: 100%;
 }
 
 .container {
@@ -55,16 +80,18 @@ select {
   top: 50px;
   right: 0px;
   height: 100%;
-  background-color: green;
   width: 33%;
+  z-index: 1000;
 
   .touristStuff {
     padding: 10px;
-    background-color: blue;
+    background-color: rgba(42, 81, 94, 0.95);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     height: 45%;
   }
 
   .myTrip {
+    margin-top: 20px;
     padding: 10px;
     background-color: purple;
     height: 45%;
@@ -84,4 +111,12 @@ select {
       }
     }
   }
+}
+
+#map-canvas {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  // background-color: black;
 }

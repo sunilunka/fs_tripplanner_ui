@@ -15,8 +15,8 @@
           <option name="hotels" value="{{ hotel.name }}">{{ hotel.name }}</option>
         {%endfor%}
       </select>
-      <button name="hotels" class="btn">
-        X
+      <button name="hotels" class="btn btn-remove">
+        <span class="glyphicon glyphicon-remove-circle" aria-hidden="true" aria-label="Delete a restaurant"></span>
       </button>
       <label for="restaurants">
         Restaurants
@@ -26,8 +26,8 @@
           <option name="restaurants" value="{{ restaurant.name }}">{{ restaurant.name }}</option>
         {%endfor%}
       </select>
-      <button name="restaurants" class="btn">
-        X
+      <button name="restaurants" class="btn btn-remove">
+        <span class="glyphicon glyphicon-remove-circle" aria-hidden="true" aria-label="Delete a restaurant"></span>
       </button>
 
       <label for="activities">
@@ -38,8 +38,8 @@
           <option name="activities" value="{{ activity.name }}">{{ activity.name }}</option>
         {%endfor%}
       </select>
-      <button name="activities" class="btn">
-        X
+      <button name="activities" class="btn btn-remove">
+        <span class="glyphicon glyphicon-remove-circle" aria-hidden="true" aria-label="Delete a restaurant"></span>
       </button>
 
     </section>
@@ -56,21 +56,21 @@
       <div class="todo">
         <h4>My Hotel</h4>
         <ul>
-          <li>My Hotel<button class="btn listBtn">X</button></li>
+          <li>My Hotel<button class="btn listBtn btn-remove">X</button></li>
         </ul>
         <h4>My Restaurants</h4>
         <ul>
-          <li>My Restaurants<button class="btn listBtn">X</button></li>
+          <li>My Restaurants<button class="btn listBtn btn-remove">X</button></li>
         </ul>
         <h4>My Activities</h4>
         <ul>
-          <li>My Activities<button class="btn listBtn">X</button></li>
+          <li>My Activities<button class="btn listBtn btn-remove">X</button></li>
         </ul>
       </div>
 
     </section>
+  </section><section id="map-canvas">
   </section>
-  <label>Hotels</label>
 
 
   {% endblock %}
