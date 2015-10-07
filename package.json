@@ -8,6 +8,7 @@
     "array-flatten": "^1.1.1",
     "bluebird": "^2.10.2",
     "body-parser": "^1.14.1",
+    "bower": "^1.5.3",
     "content-disposition": "^0.5.0",
     "content-type": "^1.0.1",
     "cookie": "^0.1.3",
